@@ -1,0 +1,314 @@
+.face{
+    height: 130px;
+    width: 200px;
+    background-color: rgb(253, 70, 131);
+    border-radius: 100px 100px 0px 0px;
+    position: relative;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+.leye{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+}
+
+.reye{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 90px;
+    right: 30px;
+}
+
+.body{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(253, 70, 131);
+    border-radius: 0px 0px 50px 50px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 500px;
+}
+
+.lhand{
+    height: 150px;
+    width: 30px;
+    background-color: rgb(253, 70, 131);
+    border-radius: 30px 30px 30px 30px;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 460px;
+}
+
+.rhand{
+    height: 150px;
+    width: 30px;
+    background-color: rgb(253, 70, 131);
+    border-radius: 30px 30px 30px 30px;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 710px;
+}
+
+.rleg{
+    height: 90px;
+    width: 30px;
+    background-color: rgb(253, 70, 131);
+    border-radius: 30px 30px 30px 30px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 550px;
+    z-index: 2px;
+}
+
+.lleg{
+    height: 90px;
+    width: 30px;
+    background-color: rgb(253, 70, 131);
+    border-radius: 30px 30px 30px 30px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 625px;
+    z-index: 2px;
+
+}
+.container:hover{
+    margin-left: 20px;
+    animation: container 2s infinite;
+}
+@keyframes container{
+    0%{
+        
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    20%{
+        
+        transform: rotate(30deg);
+        transform-origin: top;
+    }
+    40%{
+        
+        transform: rotate(0deg);
+        transform-origin: top;
+    
+    }
+    60%{
+        
+        transform: rotate(-30deg);
+        transform-origin: top;
+    }
+    80%{
+        
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    100%{
+        
+        transform: rotate(30deg);
+        transform-origin: top;
+    }
+}
+.container:hover .face{
+    background-color: aquamarine;
+    transform: skew(35deg);
+    animation: face 3s infinite;
+}
+@keyframes face{
+    0%{
+        background-color: aqua;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    20%{
+        background-color: red;
+        transform: rotate(30deg);
+        transform-origin: top;
+    }
+    40%{
+        background-color: violet;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    60%{
+        background-color: sandybrown;
+        transform: rotate(-30deg);
+        transform-origin: top;
+    }
+    60%{
+        background-color: gray;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    80%{
+        background-color: orangered;
+        transform: rotate(-30deg);
+        transform-origin: top;
+    }
+    100%{
+        background-color: rgb(28, 144, 190);
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+}
+
+.container:hover .leye,.container:hover .reye{
+    background-color: black;
+    transform: scale(2);
+}
+.container:hover .body{
+    background-color: rgb(188, 91, 188);
+    transform: scale(1);
+    animation: body 3s infinite;
+}
+@keyframes body{
+    0%{
+        background-color: aqua;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    10%{
+        background-color: red;
+        transform: rotate(40deg);
+        transform-origin: top;
+    }
+    20%{
+        background-color: violet;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    30%{
+        background-color: sandybrown;
+        transform: rotate(40deg);
+        transform-origin: top;
+    }
+    40%{
+        background-color: gray;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    50%{
+        background-color: orangered;
+        transform: rotate(40deg);
+        transform-origin: top;
+    }
+    60%{
+        background-color: rgb(28, 144, 190);
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    70%{
+        background-color: rgb(22, 79, 79);
+        transform: rotate(40deg);
+        transform-origin: top;
+    }
+    80%{
+        background-color: rgb(81, 46, 140);
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    90%{
+        background-color: rgb(170, 37, 170);
+        transform: rotate(30deg);
+        transform-origin: top;
+    }
+    100%{
+        background-color: rgb(41, 201, 139);
+        transform: rotate(40deg);
+        transform-origin: top;
+    }
+}   
+.container:hover .rhand,.container:hover .lhand{
+    background-color: greenyellow;
+    transform: scale(1);
+    animation: hand 2s infinite;
+}
+@keyframes hand{
+    0%{
+        background-color: aqua;
+        transform: rotate(30deg);
+        transform-origin: top;
+    }
+    20%{
+        background-color: red;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    40%{
+        background-color: violet;
+        transform: rotate(30deg);
+        transform-origin: top;
+    }
+    60%{
+        background-color: sandybrown;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    60%{
+        background-color: gray;
+        transform: rotate(60deg);
+        transform-origin: top;
+    }
+    80%{
+        background-color: orangered;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    100%{
+        background-color: rgb(28, 144, 190);
+        transform: rotate(20deg);
+        transform-origin: top;
+    }
+}
+
+.container:hover .rleg,.container:hover .lleg{
+    background-color: rgb(84, 84, 219);
+    transform: scale(1);
+    animation: leg 2s infinite;
+}
+@keyframes leg{
+    0%{
+        background-color: aqua;
+        transform: rotate(20eg);
+        transform-origin: top;
+    }
+    20%{
+        background-color: red;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    40%{
+        background-color: violet;
+        transform: rotate(20deg);
+        transform-origin: top;
+    }
+    60%{
+        background-color: sandybrown;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    60%{
+        background-color: gray;
+        transform: rotate(20deg);
+        transform-origin: top;
+    }
+    80%{
+        background-color: orangered;
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    100%{
+        background-color: rgb(28, 144, 190);
+        transform: rotate(40deg);
+        transform-origin: top;
+    }
+
+}
